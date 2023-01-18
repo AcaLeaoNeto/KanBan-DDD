@@ -5,6 +5,15 @@ namespace Domain.Entitys
 {
     public class Tasks
     {
+
+        public Tasks(int boardId, string title, string description)
+        {
+            BoardId= boardId;
+            Title= title;
+            Description= description;
+        }
+
+
         [Required]
         public int Id { get; set; }
         [Required]

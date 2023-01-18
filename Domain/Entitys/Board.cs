@@ -5,6 +5,13 @@ namespace Domain.Entitys
 {
     public class Board
     {
+        public Board(string name, string description)
+        {
+            Name = name;
+            Description = description;
+        }
+
+
         [Required]
         public int Id { get; set; }
         [Required]
